@@ -1,0 +1,8 @@
+{
+  "name": "employeeManagement",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/marufdeen/employeeManagement.git",
+  "author": "marufdeen <marufajagunna@gmail.com>",
+  "license": "MIT"
+}
