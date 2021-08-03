@@ -73,7 +73,7 @@ class validations {
    * @returns {Array} editErrors
    */
   static async validateEmployeeEdit(body, employeeId) {
-    const { firstName, lastName, role, salary, email } = body;
+    const { firstName, lastName, phoneNumber, role, salary, email} = body;
     const editErrors = {};
     const emailAlreadyExist = await checkEmail(email);
     const phoneNumberAlreadyExist = await checkPhoneNumber(phoneNumber);
@@ -85,6 +85,15 @@ class validations {
     if (!lastName || lastName.length < 3 || !validName.test(lastName)) {
       editErrors.message = 'Last name is required, with at least three alphabetical characters';
     }
+
+    if(!salary) {
+      editErrors.message = 'Salary is required and must be in digits';
+    }
+
+    if(!role) {
+      editErrors.message = 'Role is required';
+    }
+
     if (!email || !validEmail.test(email)) {
       editErrors.message = 'Invalid Email Format';
     }
