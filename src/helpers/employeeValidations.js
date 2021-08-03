@@ -104,9 +104,7 @@ class validations {
       }
     if (!phoneNumber || !validPhoneNumber.test(phoneNumber)) {
       editErrors.message = 'Phone Number is required and must be up to 11 digits';
-    }
-    console.log(phoneNumberAlreadyExist.id)
-    console.log(employeeId)
+    } 
     if (phoneNumberAlreadyExist !== null
       && phoneNumberAlreadyExist.phoneNumber.length > 0
       && phoneNumberAlreadyExist.id !== employeeId
