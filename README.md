@@ -7,7 +7,7 @@ An employee management application
 An employee management application demo that enables user to manage employees and by carrying out some operations.
 
 <ul>
-<li> Register and Login </li>
+<li> Register and Login ( As an employer) </li>
 <li> Create an empoyee </li>
 <li> Get all employees</li>
 <li> Get a single employee with an Id</li>
